@@ -1,0 +1,231 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #0f1424;
+    color: white;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-window {
+    display: flex;
+}
+
+.user {
+    max-width: 200px;
+    background-color: #1d204b;
+    border-radius: 10px;
+}
+.profile {
+    padding: 20px;
+    padding-right: 75px;
+    background-color: #5746ea;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 75px;
+    height: 75px;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-bottom: 15px;
+}
+
+.user-info p {
+    color: #a8a2fe;
+    font-size: 0.75rem;
+}
+
+#user-name {
+    margin: 0;
+    padding: 0px 0px 60px 0px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color : white;
+}
+
+.period {
+    padding: 20px;
+    font-size: 0.75rem;
+    color: #676ba9;
+}
+
+#weeklyPeriod {
+    color: white;
+}
+
+.time-spent {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    padding: 0px 0px 20px 0px;
+}
+
+.row2 {
+    display: flex; 
+}
+
+.card {
+    background-color: purple;
+    margin: 0px 0px 0px 20px;
+    flex-basis: 33%;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    color: white;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardBackground {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1d204b;
+    border-radius: 10px;
+    font-size: 0.52rem;
+    color: #9b9fd0;
+    line-height: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.spentHours {
+    padding: 0px 70px 0px 0px;
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.icons {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    z-index: 1;
+}
+
+.period p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.cardBackground:hover {
+    cursor: pointer;
+    background-color: #34397b;
+}
+
+.ellipsis:hover {
+    cursor: pointer;
+    background-color: #1d204b;
+}
+
+#work {
+    background-color: #ff8b64;
+}
+
+#play {
+    background-color: #56c2e6;
+}
+
+#study {
+    background-color: #ff5e7d;
+}
+
+#exercise {
+    background-color: #4bcf83;
+}
+
+#social {
+    background-color: #7235d1;
+}
+
+#selfCare {
+    background-color: #f1c75b;
+}
+
+@media (max-width: 576px) {
+    .background {
+        height: 100vh;
+        width: 100%;
+        align-items: start;
+        justify-content: center;
+    }
+    .main-window {
+        width: 80%;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .user {
+        width: 100%;
+        max-width: 400px;
+    }
+    .profile {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 20px 20px 20px;
+    }
+    .user-info {
+        margin-left: 20px;
+        padding: 0px;
+    }
+    #user-name {
+        font-size: 1.3rem;
+        padding: 0px;
+    }
+    .period {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .time-spent {
+        width: 100%;
+        flex-direction: column;
+    }
+    .row1 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .row2 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+    .spentHours {
+        padding: 0px;
+    }
+    .timings {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #selfCare {
+        margin-bottom: 40px;
+    }
+}
